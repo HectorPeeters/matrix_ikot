@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "@types/node": "^18.7.18",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1"
+  },
+  "name": "kotwatcher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --inspect=5858 -r ts-node/register ./src/index.ts",
+    "dev": "nodemon",
+    "format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "beautiful-dom": "^1.0.9",
+    "matrix-bot-sdk": "^0.6.1"
+  }
+}
